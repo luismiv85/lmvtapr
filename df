@@ -1,0 +1,36 @@
+[33mcommit 4cf6b0540f973df393b207a16a7ab5ef3dbca6f6[m
+Author: luismiv85 <louismiguelv85@gmail.com>
+Date:   Sat Sep 14 00:56:44 2013 +0200
+
+    primer comit en branche
+
+[33mcommit c278044ae76f94c64025a1b0df6d6e3d97dfee71[m
+Author: luismiv85 <louismiguelv85@gmail.com>
+Date:   Sat Sep 14 00:49:11 2013 +0200
+
+    ejemplo
+
+[33mcommit e95195193589de9c2f1bccecf37e3b256949a7fc[m
+Merge: 8dc1c03 2ef1d59
+Author: angelapr <angla.pr.27@gmail.com>
+Date:   Sat Sep 14 00:05:49 2013 +0200
+
+    Merge branch 'master' of github.com:luismiv85/lmvtapr
+
+[33mcommit 2ef1d59b5a2dfab861b54679d6093f227db72723[m
+Author: luismiv85 <louismiguelv85@gmail.com>
+Date:   Fri Sep 13 23:49:41 2013 +0200
+
+    segundo cambio
+
+[33mcommit 8dc1c03457bbd0aeadf559d809059d700d2893c7[m
+Author: angelapr <angla.pr.27@gmail.com>
+Date:   Fri Sep 13 23:18:59 2013 +0200
+
+    commit angela
+
+[33mcommit ff130674cb8e19a2ea6654e5376b98d5b49df66b[m
+Author: luismiv85 <louismiguelv85@gmail.com>
+Date:   Fri Sep 13 20:47:32 2013 +0200
+
+    Configuracion proyecto
