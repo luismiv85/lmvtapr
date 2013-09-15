@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   	ejmplo - 1 - made en branche
   	editado en branche
   	editado por angela
+  	asdkf
   end
 end
  
