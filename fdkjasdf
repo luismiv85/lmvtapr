@@ -1,0 +1,12 @@
+[1mdiff --git a/app/controllers/home_controller.rb b/app/controllers/home_controller.rb[m
+[1mindex 0118ac0..09f04ef 100644[m
+[1m--- a/app/controllers/home_controller.rb[m
+[1m+++ b/app/controllers/home_controller.rb[m
+[36m@@ -1,6 +1,6 @@[m
+ class HomeController < ApplicationController[m
+   def index[m
+[31m-  	ejmplo - 1 - made en branche- ahora en master[m
+[32m+[m[41m  [m	[32mejmplo - 1 - made en branche[m
+   end[m
+ end[m
+  [m
