@@ -49,6 +49,7 @@ PARALLAX EFFECTS...........................1474
 	/**********************  THEME COLORS ***********************/
 		.main-color{
 			color:#f89406;
+
 		}
 		.main-br-color{
 			background-color:#f89406;
@@ -58,6 +59,7 @@ PARALLAX EFFECTS...........................1474
 			border-bottom:2px solid #f89406;
 			display:inline-block;
 			padding-bottom:1px;
+
 		}
 		.color-white{
 			color:rgba(250, 250, 250 , 0.02);
@@ -93,7 +95,7 @@ PARALLAX EFFECTS...........................1474
 
 		
 		#header-section {
-			background: #222 url(../img/background1.jpg) bottom center repeat fixed;
+			background: #222 url(/assets/background5.jpg	) bottom center repeat fixed;
 			height: 650px;
 			height: 650px;
 			width: 100%;
@@ -154,6 +156,7 @@ PARALLAX EFFECTS...........................1474
 			.inner-wrap-hero{
 				padding:10px 20px;
 				text-align:center;
+				
 			}
 			
 			#header-section .hero-unit h1 span{
@@ -273,8 +276,9 @@ PARALLAX EFFECTS...........................1474
 				-moz-box-shadow: none;
 				box-shadow: none;
 				background-color: rgba(0, 0, 0, 0.3);
-				background: rgba(0, 0, 0, 0.3) url(../img/line_bg.png) top left repeat;
-				background-image:url(../img/line_bg.png) top left repeat;
+				background: rgba(0, 0, 0, 0.3) top left repeat;
+				/*background-image:url(/assets/line_bg.png) top left repeat;
+				background-image: url(/assets/background4.png);*/
 				padding-top:10px;
 				padding-bottom:10px;
 				border-bottom: none;
@@ -292,7 +296,7 @@ PARALLAX EFFECTS...........................1474
 			}
 			.navbar-inner.navbar-scroll {
 				border-top: none;
-				background:rgba(0, 0, 0, 0.7) url(../img/line_bg.png) top left repeat;
+				background:rgba(0, 0, 0, 0.7) url(/assets/line_bg.png) top left repeat;
 				padding-bottom:5px;
 				padding-top:5px;
 				-moz-transition: padding 0.5s ease-in-out;
@@ -341,8 +345,10 @@ PARALLAX EFFECTS...........................1474
 					}
 					
 					.navbar .brand {
-						
+						font-family: 'Oswald';
 						font-weight: 400;
+						font-size: 50px;
+						letter-spacing: 2px;
 						/*background: url(../img/logo-bg.png) top left no-repeat;*/
 						padding:10px 15px 12px 150px;
 						margin-left:-120px;
@@ -1751,3 +1757,5 @@ PARALLAX EFFECTS...........................1474
 					line-height: 35px;
 					}
 			}			
+
+

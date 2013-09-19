@@ -19,7 +19,10 @@
           
           
             <span>
-              <%= link_to image_tag("logotipo2.png",:alt=>"logotiop", :width=>"50px")+"TAPEANDO a la carta", root_path, :class=>"brand" %> 
+           
+              <%= link_to "tapeando", root_path, :class =>"brand" %>
+              <!-- 
+              <%= link_to image_tag("logotipo2.png",:alt=>"logotiop", :width=>"50px")+"TAPEANDO", root_path, :class=>"brand" %> -->
             </span> 
           
           <div id="main-nav" class="scroller-spy">
@@ -41,11 +44,11 @@
       </div>
     </div>
   
-   <!-- ################-->
- <!-- END TOP MENU -->
- <!-- ################-->   
-      </nav>
-      <!-- END HEADER headertop NAV -->
+  <!-- ################-->
+  <!-- END TOP MENU -->
+  <!-- ################-->   
+  </nav>
+  <!-- END HEADER headertop NAV -->
 
       
 <!-- HEADER MARKETING SLOGAN-->
@@ -53,31 +56,32 @@
   <div class="row-fluid">
     <div class="wrap-hero">
       <div class="hero-unit text-center">
-        <!--LOGO-->
-        <div class="logo">
-          <a href="#" title="Scroll&amp;Strap">
-            <img src="assets/img/logo_1.png" alt="logo"/>
-          </a>
-        </div>
-        <!--/ LOGO-->
         
-          <div class="inner-wrap-hero">
-          
-            <h1 class="text-center main-color"> 
-              
-            <span>MODERN PARALLAX ONEPAGER<!--INTRODUCING SCROLL&amp;STRAP!--></span>
-              <span class="visible-desktop">MODERN PARALLAX ONE PAGE  TEMPLATE BUILD ON BOOTSRAP 2.3.0</span>
-            
-              
-            </h1>
-            
-          </div>
-        <!--<hr class="half">-->
-      <span class="gobottom" id="nav2">
+        <!--BUSCADOR-->
+        <div class="logo">
+          <div class="encuentra-bar"><h3>¡Encuentra tu bar!</h3></div>
+          <%= form_tag do %>
+            <%= text_field_tag :name_bar,nil, :class=>"span3 home-input", :placeholder=>"Nombre del bar...", ("data-provide")=>"typeahead" %>
+            <%= text_field_tag :city_bar,nil, :class=>"span3 home-input", :placeholder=>"Ciudad o CP ...", ("data-provide")=>"typeahead", ("data-source")=>'["hola","couper", "angela"]' %>
+            <%= submit_tag "Buscar", :class=>"btn btn-warning btn-large" %>
+          <% end %>
+        </div>
+        <!--/ BUSCADOR -->
+        
+        <!-- ADVERTISEMENT -->
+        <div class="inner-wrap-hero">
+          <h1 class="text-center main-color"> 
+            <span class="tapeando">tapeando</span>
+            <span class="visible-desktop">MODERN PARALLAX ONE PAGE  TEMPLATE BUILD ON BOOTSRAP 2.3.0</span>  
+          </h1>  
+        </div>
+        
+        <span class="gobottom" id="nav2">
           <a href="#features-section" title="">
             <i class="fa-icon-chevron-down fa-icon-large"></i>
           </a>
-      </span>
+        </span>
+        <!-- ADVERTISEMENT -->
         
       
       </div>  
