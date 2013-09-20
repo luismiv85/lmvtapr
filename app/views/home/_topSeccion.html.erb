@@ -9,25 +9,26 @@
       <!-- navbar-fixed-top -->
       <div class="navbar-inner" id="navbartop">
         <div class="container">
-          
-          
-            <span>
-           
-              <%= link_to "tapeando", root_path, :class =>"brand" %>
-              <!-- 
-              <%= link_to image_tag("logotipo2.png",:alt=>"logotiop", :width=>"50px")+"TAPEANDO", root_path, :class=>"brand" %> -->
+          <% if current_page?(root_path) %>
+            <span id="nav0">
+              <%= link_to "tapeando", "#header-section", :class =>"brand" %>
             </span> 
+          <% else %>
+            <span>
+              <%= link_to "tapeando", root_path, :class =>"brand" %>
+            </span>
+          <% end %>
+          
           
           <div id="main-nav" class="scroller-spy">
             <nav class="nav-collapse collapse" >
               <ul class="nav" id="nav">
                 <li class="active"><a href="#header-section">Inicio</a> </li>
-                <li><%= link_to "Ciudades", "#features-section" %>
-                  
-        <li><a href="#team-section">Nosotros</a> </li>
-        <!--<li><a href="#portfolio-section">Works</a> </li>
-        <li><a href="#price-section">Price</a> </li>-->
-        <li><a href="#contact-section">Contacto</a> </li>
+                <li><%= link_to "Ciudades", "#features-section" %> </li>    
+                <li><a href="#team-section">Nosotros</a> </li>
+                <!--<li><a href="#portfolio-section">Works</a> </li>
+                <li><a href="#price-section">Price</a> </li>-->
+                <li><a href="#contact-section">Contacto</a> </li>
               </ul>
             </nav>
       
@@ -52,20 +53,22 @@
         
         <!--BUSCADOR-->
         <div class="logo">
-          <div class="encuentra-bar"><h3>¡Encuentra tu bar!</h3></div>
-          <%= form_tag do %>
-            <%= text_field_tag :name_bar,nil, :class=>"span3 home-input", :placeholder=>"Nombre del bar...", ("data-provide")=>"typeahead" %>
-            <%= text_field_tag :city_bar,nil, :class=>"span3 home-input", :placeholder=>"Ciudad o CP ...", ("data-provide")=>"typeahead", ("data-source")=>'["hola","couper", "angela"]' %>
-            <%= submit_tag "Buscar", :class=>"btn btn-warning btn-large" %>
-          <% end %>
+          <div class="wrap-searching">
+            <div class="encuentra-bar"><h3>¡Encuentra tu bar!</h3></div>
+            <%= form_tag do %>
+              <%= text_field_tag :name_bar,nil, :class=>"span3 home-input", :placeholder=>"Nombre del bar...", ("data-provide")=>"typeahead" %>
+              <%= text_field_tag :city_bar,nil, :class=>"span3 home-input", :placeholder=>"Ciudad o CP ...", ("data-provide")=>"typeahead", ("data-source")=>'["hola","couper", "angela"]' %>
+              <%= submit_tag "Buscar", :class=>"btn btn-warning btn-large" %>
+            <% end %>
+          </div>
         </div>
         <!--/ BUSCADOR -->
         
         <!-- ADVERTISEMENT -->
         <div class="inner-wrap-hero">
           <h1 class="text-center main-color"> 
-            <span class="tapeando">tapeando</span>
-            <span class="visible-desktop">MODERN PARALLAX ONE PAGE  TEMPLATE BUILD ON BOOTSRAP 2.3.0</span>  
+            <span>tapeando</span>
+            <span class="visible-desktop">¡ADIÓS A LAS SORPRESAS AL PAGAR!<br>PODRÁS VER LA CARTA Y ELEGIR QUE BAR/RESTAURENTE SE ADAPTA A TU BOLSILLO</span>  
           </h1>  
         </div>
         

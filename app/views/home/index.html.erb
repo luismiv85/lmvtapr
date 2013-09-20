@@ -6,7 +6,6 @@
 <!--START MAIN-WRAPPER--> 
 
 <%= render 'topSeccion' %>
-
 <%= render 'serviceSection' %>
   
   <!-- /FEATURE section-->
@@ -255,7 +254,7 @@
     </div><!-- / ROW-->
     
   </div>
-  
+  <%= link_to "tapeando", root_path, :class =>"brand" %>
   </section>
 
 </footer>
@@ -271,11 +270,12 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function(){
-  jQuery('#nav').localScroll(1000);
-  jQuery('#nav2').localScroll(1000);
-  jQuery('#nav3').localScroll(1000);
-  jQuery('#nav4').localScroll(1000);
-  jQuery('#nav5').localScroll(1000);
+  jQuery('#nav0').localScroll(900);
+  jQuery('#nav').localScroll(900);
+  jQuery('#nav2').localScroll(900);
+  jQuery('#nav3').localScroll(900);
+  jQuery('#nav4').localScroll(900);
+  jQuery('#nav5').localScroll(900);
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element
   //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
@@ -383,7 +383,6 @@ jQuery('#header-section').bind('inview', function (event, visible) {
     var navbartop = jQuery('#topnavbar');
       jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() > 640) {
-        
           navbar.addClass("navbar-scroll");
           navbartop.removeClass("navbar-static-top");
           navbartop.addClass("navbar-fixed-top");
