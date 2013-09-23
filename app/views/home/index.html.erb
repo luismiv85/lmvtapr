@@ -210,7 +210,8 @@
   <div class="span6">
   <span class="logo"><!--LOGO-->
       <a href="#" title="Scroll&amp;Strap">
-        <img src="assets/img/logo_1_orange.png" alt="logo">
+        <%= image_tag "logo_1_orange.png", :alt => "logo" %>
+      
       </a>
     </span>
     <hr/>
@@ -254,7 +255,7 @@
     </div><!-- / ROW-->
     
   </div>
-  <%= link_to "tapeando", root_path, :class =>"brand" %>
+  <%= link_to "tapeando", home_prueba_path, :class =>"brand" %>
   </section>
 
 </footer>
@@ -273,8 +274,8 @@ jQuery(document).ready(function(){
   jQuery('#nav0').localScroll(900);
   jQuery('#nav').localScroll(900);
   jQuery('#nav2').localScroll(900);
-  jQuery('#nav3').localScroll(900);
-  jQuery('#nav4').localScroll(900);
+  //jQuery('#nav3').localScroll(900);
+  //jQuery('#nav4').localScroll(900);
   jQuery('#nav5').localScroll(900);
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element
@@ -283,11 +284,12 @@ jQuery(document).ready(function(){
   jQuery('#header-section').parallax("50%", 0.1);
   jQuery('#features-section').parallax("50%", 0.1);
   jQuery('#team-section').parallax("50%", 0.1);
-  jQuery('.bg').parallax("50%", 0.3);
-  jQuery('#portfolio-section').parallax("50%", 0.3);
-  jQuery('#price-section').parallax("50%", 0.3);
+  //jQuery('.bg').parallax("50%", 0.3);
+  //jQuery('#portfolio-section').parallax("50%", 0.3);
+  //jQuery('#price-section').parallax("50%", 0.3);
   jQuery('#contact-section').parallax("50%", 0.1);
-  jQuery('#slogan-section-1').parallax("50%", 0.3);
+  //jQuery('#slogan-section-1').parallax("50%", 0.3);
+  
   
 })
 </script>
